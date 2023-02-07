@@ -1,0 +1,613 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    position:fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background-color: #a3d9ffcc;
+}
+
+body{
+    height: 100%;
+    background-color: #f5f5f5;
+}
+main{
+    margin:0px;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../imagenes/wave.svg);
+    background-size: cover;
+}
+
+/* ESTILOS ENCABEZADO */
+.contenedor-encabezado{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    padding: 0px 20px;
+    min-height: 130px;
+}
+
+.contenedor-encabezado__logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.contenedor-encabezado__logo img {
+    height: 80px;
+}
+
+.contenedor-encabezado__nav{
+    position:relative;
+    height: 100%;
+}
+
+.contenedor-encabezado__nav nav{
+    height: 100%;
+}
+
+.contenedor-encabezado__nav nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-encabezado__nav nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+.contenedor-encabezado__nav nav ul li a{
+    color: #373737;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*#seleccionada{
+    color: white;
+    background: #067BC2;
+    padding: 10px 30px;
+    border-radius: 20px; 
+}
+*/
+
+/*COVERTOR*/
+
+.contenedor-principal-todo__cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family:'Poppins', sans-serif;
+    margin-top: 60px;
+}
+
+.contenedor-principal-todo__cover-contenedor{
+    max-width: 1200px;
+    margin:auto;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contenedor-principal-todo__info{
+    max-width: 400px;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.contenedor-principal-todo__info h1{
+    max-width: 400px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #373737;
+
+}
+
+.contenedor-principal-todo__info h2{
+    font-size: 60px;
+    font-weight: 900;
+    color: #F58634;
+}
+
+.contenedor-principal-todo__info p{
+    margin-top: 10px;
+    color: #7a7a7a;
+}
+
+.estilo-boton-1{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: #F58634;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor:pointer;
+}
+
+.estilo-boton-1 a{
+    color:white;
+}
+
+.estilo-boton-1:hover{
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+.contenedor-principal-all__vector{
+    position:relative;
+
+}
+
+.contenedor-principal-all__vector img {
+    position: absolute;
+    bottom:10px;
+    right: 0px;
+    width: 600px;
+    animation: move_vector 6s ease-in-out infinite;
+}
+
+@keyframes move_vector {
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+/* ESTILOS PRINCIPAL INICIO */
+
+.contenedor-principal{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-principal h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #373737;
+    margin-top:120px;
+    text-align: center;
+}
+
+.contenedor-principal span{
+    background-color: #266DD3;
+    height: 2px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 125px;
+
+}
+
+.contenedor-principal__banner img{
+    margin-bottom: -115px;
+    margin-top: 10px;
+    width: 100%;
+    height:250px;
+}
+
+.contenedor-principal__boton{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.boton-estilo-1{
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    background-color: #CDD3D5;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+}
+
+.boton-estilo-1 a {
+    color: black;
+} 
+
+/* ESTILOS PRINCIPAL CONTACTO */
+.contenedor-principal-contacto{  
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin: 130px auto 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;  
+    background-color: #fbfbfb; 
+}
+
+.contenedor-principal-contacto__formulario input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #266DD3; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+.contenedor-principal-contacto__formulario textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #266DD3;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+.contenedor-principal-contacto__formulario label{
+    display: block; 
+    float: center;  
+}
+
+.contenedor-principal-contacto__formulario button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #266DD3;
+    border-color: #266DD3;
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+}
+
+.contenedor-principal-contacto__formulario button p{
+    color: white; 
+}
+
+.contenedor-principal-contacto__formulario span{
+    color: red; 
+}
+
+.contenedor-principal-contacto__formulario-aviso{
+    font-family:'Poppins', sans-serif;
+    font-size: 13px;  
+    color: black;  
+}
+
+.contenedor-principal-contacto__titulo{
+    font-family:'Poppins', sans-serif;
+    font-size: 39px;  
+    text-align: center; 
+    padding-bottom: 20px; 
+    color: #266DD3;
+}
+
+.contenedor-principal-contacto__subtitulo{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: black;   
+}
+
+.contenedor-principal-contacto__formulario p{
+    font-family:'Poppins', sans-serif;
+    font-size: 14px; 
+    color: black; 
+}
+
+::-webkit-input-placeholder {
+color: lightgrey;
+}
+::-webkit-textarea-placeholder {
+color: lightgrey;
+}
+
+/* ESTILOS LOGO WHATSAPP */
+
+.contenedor-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.contenedor-whatsapp svg {
+    width: 80px;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
+
+.contenedor-whatsapp svg circle{
+    fill: #25d366;
+}
+
+.contenedor-whatsapp svg path {
+    fill: #fff;
+}
+
+
+/*Estilos nosotros */
+
+.contenedor-principal-nosotros{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding:15px 0px;
+}
+
+.contenedor-principal-nosotros h2{
+    max-width: 1200px;
+    border-top: solid 2px #266DD3;
+    border-bottom: solid 2px #266DD3;
+    padding: 10px;
+    color: #F58634;
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.contenedor-principal-nosotros p{
+    font-family:'Poppins', sans-serif;
+    color: #7a7a7a;
+    font-size: 18px;
+    text-align: justify;
+    max-width: 1200px;
+    line-height: 1.5;
+    font-weight: 600;
+
+}
+
+
+
+/*Estilos pie */
+.contenedor-pie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200;
+    margin:auto;
+    margin-top: 100px;
+}
+.contenedor-pie__caja{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.contenedor-pie__caja h2{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    color:#266DD3;
+    font-weight: 800;
+
+}
+
+.contenedor-pie__caja p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:#7a7a7a;
+    margin-top: 10px;
+}
+
+
+.contenedor-pie__caja a{
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10px;
+    color:#7a7a7a;
+    font-weight: 600;
+}
+
+.contenedor-pie__caja a:hover{
+    opacity: 0.5;
+}
+
+.contenedor-pie__caja a .fa-brands{
+    font-size: 20px;
+}
+
+.contenedor-pie__logo img {
+    width: 140px;
+}
+
+.contenedor-pie__terminos{
+    font-family: 'Nunito', sans-serif;
+    color: #7a7a7a;
+    max-width: 350px;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.caja-copyright{
+    max-width: 1200;
+    margin:auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.caja-copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+
+}
+
+.caja-copyright hr {
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/* ESTILOS PRINCIPAL SERVICIOS */
+
+.contenedor-principal-servicios{
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+    display:flex;
+    flex-wrap: wrap;
+    font-family:'Poppins', sans-serif;
+}
+
+.contenedor-principal-servicios h1{
+    width: 100%;
+    text-align: center;
+    color:#373737;
+    font-size: 40px;
+}
+
+.contenedor-principal-servicios h2{
+    width: 100%;
+    color:#F58634;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contenedor-principal-servicios__all{
+    margin: auto;
+    align-items: left;
+}
+
+.contenedor-principal-servicios__all-diseño{
+    width: 100%;
+    height: 300px;
+    max-width: 1400px;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #266DD3;
+}
+
+#diseño-ultimo{
+    border-bottom: 2px solid #266DD3;
+    height: auto;
+}
+
+.contenedor-principal-servicios__all h3{   
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:#373737;
+}
+
+.contenedor-principal-servicios__all img{
+    width: 250px;
+    float:left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.contenedor-principal-servicios__all p{
+    color:#7a7a7a;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+/* ESTILOS PRINCIPAL TRABAJOS */
+
+.contenedor-principal-trabajos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:130px;
+    font-family:'Poppins', sans-serif;
+}
+
+
+.contenedor-principal-trabajos h1{
+    font-size: 40px;
+    color: #373737;
+}
+
+.contenedor-principal-trabajos h2{
+    font-size: 40px;
+    color:#F58634;
+}
+
+.contenedor-principal-trabajos h3{
+    padding: 5px;
+    margin:30px 0px;
+    font-size: 30px;
+    color: #266DD3;
+}
+
+.contenedor-principal-trabajos span{
+    background-color: #266DD3;
+    height: 2px;
+    width: 100%;
+    max-width: 1600px;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.contenedor-principal-trabajos__imagenes{
+    width: 100%;
+    max-width: 1600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-principal-trabajos__imagenes img{
+    width: 400px;
+    height: 350px;
+    padding: 5px;
+}
+
+/* responsive? */
+
+@media(max-width:800px){
+    .contenedor-principal-trabajos{
+        flex:50%;
+        padding: 5px;
+    }
+}
+
+@media(max-width:600px){
+    .contenedor-principal-trabajos{
+        flex:100%;
+        padding: 5px;
+    }
+}
+
+
